@@ -1,11 +1,11 @@
 # MBBS-Study-Abroad
 **Project Overview**
-This is a simple and responsive landing page for students who want to study MBBS abroad. The page includes:
--> A hero section with a call-to-action (CTA).
--> Why Study MBBS Abroad? section with benefits.
--> A list of top countries for studying MBBS.
--> The admission process & eligibility steps.
--> A lead generation form to collect student details.
+This is a simple and responsive landing page for students who want to study MBBS abroad. The page includes:<br>
+-> A hero section with a call-to-action (CTA).<br>
+-> Why Study MBBS Abroad? section with benefits.<br>
+-> A list of top countries for studying MBBS.<br>
+-> The admission process & eligibility steps.<br>
+-> A lead generation form to collect student details.<br>
 
 **Technologies Used**
 -> Front-End: HTML, CSS (Tailwind), JavaScript
