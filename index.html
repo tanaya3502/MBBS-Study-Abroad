@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study MBBS Abroad</title>
+    <meta name="description" content="Apply now to study MBBS abroad in top countries like Russia, Uzbekistan, Kazakhstan, and more.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white text-center py-20">
+        <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
+        <p class="mt-4 text-lg">Explore top destinations for MBBS studies and kickstart your medical career.</p>
+        <a href="#apply" class="mt-6 inline-block bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">Apply Now</a>
+    </section>
+
+    <!-- Why Study MBBS Abroad -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-bold text-center">Why Study MBBS Abroad?</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-6">
+            <div class="p-4 bg-white shadow rounded-lg"> Affordable Tuition Fees</div>
+            <div class="p-4 bg-white shadow rounded-lg"> Globally Recognized Universities</div>
+            <div class="p-4 bg-white shadow rounded-lg"> High-Quality Education</div>
+        </div>
+    </section>
+
+    <!-- Top Countries -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-bold text-center">Top Countries</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-6">
+            <div class="p-4 bg-white shadow rounded-lg">RUSSIA</div>
+            <div class="p-4 bg-white shadow rounded-lg">CANADA</div>
+            <div class="p-4 bg-white shadow rounded-lg">FRANCE</div>
+            <div class="p-4 bg-white shadow rounded-lg">AUSTRALIA</div>
+            <div class="p-4 bg-white shadow rounded-lg">UK</div>
+            <div class="p-4 bg-white shadow rounded-lg">JAPAN</div>
+            <div class="p-4 bg-white shadow rounded-lg">GERMANY</div>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-bold text-center">Admission Process & Eligibility</h2>
+        <ol class="list-decimal list-inside bg-white shadow rounded-lg p-6 mt-6">
+            <li>Choose your country and university.</li>
+            <li>Submit necessary documents.</li>
+            <li>Receive your admission letter.</li>
+            <li>Apply for a student visa.</li>
+            <li>Fly to your study destination!</li>
+        </ol>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="apply" class="container mx-auto p-6">
+        <h2 class="text-2xl font-bold text-center">Apply Now</h2>
+        <form id="leadForm" action="process.php" method="POST" class="bg-white shadow rounded-lg p-6 mt-6">
+            <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded-lg mb-4" required>
+            <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded-lg mb-4" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" class="w-full p-3 border rounded-lg mb-4" required>
+            <select name="country" class="w-full p-3 border rounded-lg mb-4" required>
+                <option value="">Preferred Country</option>
+                <option value="Russia">Russia</option>
+                <option value="Uzbekistan">Canada</option>
+                <option value="Kazakhstan">France</option>
+                <option value="Philippines">Australia</option>
+                <option value="Georgia">UK</option>
+                <option value="Kyrgyzstan">Japan</option>
+                <option value="Egypt">Germany</option>
+            </select>
+            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        // JavaScript for form validation
+        document.getElementById("leadForm").addEventListener("submit", function(event) {
+            let email = document.querySelector("input[name='email']").value;
+            let phone = document.querySelector("input[name='phone']").value;
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            let phonePattern = /^[0-9]{10}$/;
+
+            if (!email.match(emailPattern)) {
+                alert("Please enter a valid email.");
+                event.preventDefault();
+            }
+            if (!phone.match(phonePattern)) {
+                alert("Please enter a valid phone number (10 digits).");
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
